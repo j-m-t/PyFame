@@ -26,7 +26,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/path/to/fame/timeiq/lib/linux_x86/64
 ```
 
 Finally, since the script hasn't been properly package, it is imported easily after doing the following:
-```
+```bash
 export PYTHONPATH=$PYTHONPATH:/path/to/pyfame/
 ```
 
@@ -37,7 +37,7 @@ PyFame has been developed to serve the immediate purpose of reading and comparin
 Usage
 -----
 The simplest way to use it:
-```
+```python
 from pyfame import getfame
 data = getfame('/path/to/fame.db')
 ```
