@@ -32,8 +32,13 @@ export PYTHONPATH=$PYTHONPATH:/path/to/pyfame/
 
 Caveats
 -------
-PyFame has been developed to serve the immediate purpose of reading and compare quarterly data from multiple FAME databases, but it may be extended to read data of other frequencies.  There is no intention at the current time to implement a class to write data.
+PyFame has been developed to serve the immediate purpose of reading and comparing quarterly data from multiple FAME databases, but it may be extended to read data of other frequencies.  There is no intention at the current time to implement a class to write data.
 
 Usage
 -----
-To be continued...
+The simplest way to use it:
+```
+from pyfame import getfame
+data = getfame('/path/to/fame.db')
+```
+You can load multiple databases, select multiple series within the databases, specify start and end dates (quarterly only), and give your own names to the databases to make it easier to compare between them.
